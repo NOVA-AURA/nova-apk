@@ -1,10 +1,5 @@
-#!/bin/sh
-# Gradle wrapper script
+# Step into your Android project root folder
+cd your-project-directory
 
-set -e
-
-# Resolve directory of script
-DIR="$(cd "$(dirname "$0")" && pwd)"
-
-# Execute the wrapper jar with passed arguments
-exec java -jar "$DIR/gradle/wrapper/gradle-wrapper.jar" "$@"
+# Initialize or upgrade the wrapper to a specific version (e.g., 7.6.1)
+./gradlew wrapper --gradle-version=7.6.1 --distribution-type=bin
