@@ -1,2 +1,2 @@
-rootProject.name = "NovaDivine"
+rootProject.name = "YourAppName"
 include ':app'
