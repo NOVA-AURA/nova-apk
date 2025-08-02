@@ -1,5 +1,25 @@
-# Step into your Android project root folder
-cd your-project-directory
+#!/usr/bin/env sh
 
-# Initialize or upgrade the wrapper to a specific version (e.g., 7.6.1)
-./gradlew wrapper --gradle-version=7.6.1 --distribution-type=bin
+##############################################################################
+##
+##  Gradle start up script for UN*X
+##
+##############################################################################
+
+# Set default values for environment variables
+DEFAULT_JVM_OPTS=""
+
+APP_NAME="Gradle"
+APP_BASE_NAME=`basename "$0"`
+
+# Attempt to locate JAVA_HOME
+if [ -n "$JAVA_HOME" ] ; then
+  JAVA_EXEC="$JAVA_HOME/bin/java"
+else
+  JAVA_EXEC="java"
+fi
+
+CLASSPATH="gradle/wrapper/gradle-wrapper.jar"
+MAIN_CLASS=org.gradle.wrapper.GradleWrapperMain
+
+exec "$JAVA_EXEC" $DEFAULT_JVM_OPTS -classpath "$CLASSPATH" $MAIN_CLASS "$@"
