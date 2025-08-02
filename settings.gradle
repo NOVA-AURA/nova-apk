@@ -1,0 +1,2 @@
+rootProject.name = "NovaAPK"
+include ':app'
